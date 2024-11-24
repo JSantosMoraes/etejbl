@@ -7,10 +7,12 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    color: #012840;
+    text-align: justify;
 }
 
 nav {
+    color: white;
     background-color: #012840;
     width: 100vw;
     height: 18vh;
@@ -21,12 +23,12 @@ nav {
 }
 
 nav > img {
-    width: 100px;
-    height: 100px;
+    height: 75%;
 }
 
 nav > h1 {
     margin: 0px 10px;
+    text-align: justify;
 }
 
 nav > h1 > a {
@@ -36,8 +38,8 @@ nav > h1 > a {
 }
 
 nav > h1 > a:hover {
-    transition: .3s;
     color: rgb(192, 192, 192);
+    transition: .3s ease;
 }
 
 nav > ul {
@@ -60,7 +62,7 @@ nav > ul > li > a {
 
 nav > ul > li > a:hover {
     color: rgb(192, 192, 192);
-    transition: .3s;
+    transition: .3s ease;
 }
 
 
@@ -74,4 +76,57 @@ nav > input {
     padding-left: 10px;
     padding-right: 10px;
     border: none;
+}
+
+#h1defora {
+    width: 75vw;
+    margin: 50px auto;
+    font-size: 2.2em;
+}
+
+.h2defora {
+    width: 75vw;
+    margin: 50px auto;
+    font-size: 1.8em;
+}
+
+.pdefora {
+    width: 75vw;
+    margin: 50px auto;
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+img.defora {
+    width: 75vw;
+    margin: 50px auto;
+    display: block;
+    border-radius: 30px;
+}
+
+footer {
+    background-color: #012840;
+    height: 200px;
+    color: white;
+}
+
+footer > h1{
+    text-align: center;
+    padding: 50px;
+}
+
+footer > a {
+    color: white;
+    text-decoration: none;
+    font-style: none;
+    font-size: 1.2em;
+    text-align: center;
+    width: 200px;
+    margin: auto;
+    display: block;
+}
+
+footer > a:hover {
+    color: grey;
+    transition: .3s ease;
 }
