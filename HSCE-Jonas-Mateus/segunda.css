@@ -1,0 +1,162 @@
+/* Estilo Global */
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #012840;
+    text-align: justify;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+/* Estilo do Cabeçalho */
+header nav {
+    color: white;
+    background-color: #012840;
+    width: 100vw;
+    height: 18vh;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.532);
+}
+
+header nav > img {
+    height: 75%;
+}
+
+header nav > h1 {
+    margin: 0px 10px;
+    text-align: justify;
+}
+
+header nav > h1 > a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav > h1 > a:hover {
+    color: rgb(192, 192, 192);
+    transition: .3s ease;
+}
+
+/* Estilo dos Títulos e Sessões */
+h2 {
+    font-size: 2em;
+    margin: 40px auto;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.8em;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Estilo da Tabela */
+table {
+    width: 100%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: #f4f4f4;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+table thead {
+    background-color: #012840;
+    color: white;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+/* Estilo dos Formulários */
+form {
+    margin: 20px auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form input, form textarea, form select, form button {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+form textarea {
+    resize: none;
+    height: 100px;
+}
+
+form button {
+    background-color: #012840;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+form button:hover {
+    background-color: #004060;
+    transition: 0.3s ease;
+}
+
+/* Estilo do Link */
+a {
+    display: inline-block;
+    margin: 20px auto;
+    text-decoration: none;
+    color: #012840;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+a:hover {
+    color: #004060;
+    transition: 0.3s ease;
+}
+
+/* Estilo do Rodapé */
+footer {
+    background-color: #012840;
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h1 {
+    font-size: 1.2em;
+}

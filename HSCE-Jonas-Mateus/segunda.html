@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="segunda.css">
+    <link rel="shortcut icon" href="midia/favicon.ico" type="image/x-icon">
+    <title>TechNova | Segunda Página</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="midia/TechNOVA__1_-removebg-preview.png" alt="logo">
+            <h1>TechNova | <a href="https://github.com/JSantosMoraes" target="_blank">Jonas</a> e <a href="https://github.com/MateusPereira1" target="_blank">Mateus</a></h1>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Explorando Mais Tendências Tecnológicas</h2>
+
+        <section>
+            <h3>Tabela: Exemplos Práticos de Tendências Tecnológicas</h3>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Tendência</th>
+                        <th>Exemplo</th>
+                        <th>Impacto</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Inteligência Artificial</td>
+                        <td>Assistente Virtual (ChatGPT)</td>
+                        <td>Automação e produtividade</td>
+                    </tr>
+                    <tr>
+                        <td>IoT</td>
+                        <td>Smart Home (Alexa)</td>
+                        <td>Conveniência no dia a dia</td>
+                    </tr>
+                    <tr>
+                        <td>Realidade Aumentada</td>
+                        <td>Treinamento empresarial</td>
+                        <td>Aprendizado mais imersivo</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h3>Participe da Discussão</h3>
+            <form action="#" method="post" id="submit">
+                <!--  formulário Nome -->
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+                <br><br>
+
+                <!--  formulário Opinião -->
+                <label for="opinion">Qual tecnologia mais te impacta?</label>
+                <textarea id="opinion" name="opinion" rows="4" placeholder="Compartilhe sua opinião"></textarea>
+                <br><br>
+
+                <!-- formulário Seleção -->
+                <label for="tech">Escolha uma tecnologia para saber mais:</label>
+                <select id="tech" name="tech">
+                    <option value="ia">Inteligência Artificial</option>
+                    <option value="iot">Internet das Coisas</option>
+                    <option value="arvr">Realidade Aumentada</option>
+                </select>
+                <br><br>
+
+                <button  type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section>
+            <h3>Retornar à Página Inicial</h3>
+            <a href="primeira.html">Voltar para a Página Inicial</a>
+        </section>
+    </main>
+
+    <footer>
+        <h1>HSCE - 2DSB</h1>
+    </footer>
+
+    <script>
+        var submit = document.getElementById("submit")
+
+        submit.addEventListener('submit',(e)=>{
+
+            e.preventDefault()
+            alert("cadastro feito")
+
+        })
+
+
+
+    </script>
+</body>
+</html>
